@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: hsl(185, 75%, 39%);
+    z-index: 0;
+}
+span {
+    color: hsl(0, 0%, 59%);
+}
+div.card {
+    position: relative;
+    width: 349.59px;
+    height: 360px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 170px auto;
+    z-index: 1;
+    
+}
+div.card-header {
+   background-image: url(../images/bg-pattern-card.svg); 
+   background-repeat: no-repeat;
+   height: 150px;
+   width: 100%;
+   border-radius: 10px 10px 0 0;
+}
+div.card-header .card-image {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 85px;
+    left: 120px;
+    z-index: 2;
+}
+div.card-body {
+    padding-top: 60px;
+}
+div.card-body .name {
+    font-weight: 700;
+}
+div.card-body .name span {
+    font-weight: 400;
+}
+div.card-body .city {
+   font-size: 14px;
+   margin: 10px 0 25px 0;
+}
+div.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 4%, 80%);
+    padding-top: 30px;
+}
+.block-element {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.block-element span {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top -540px left -780px, bottom -580px right -740px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-position: top -500px left -250px, bottom -620px right -200px;
+    }
+}
